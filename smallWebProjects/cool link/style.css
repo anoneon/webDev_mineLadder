@@ -1,0 +1,35 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    box-sizing: border-box;
+}
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+li{
+    display: inline-block;
+}
+li a{
+    text-decoration: none;
+    display: inline-block   ;
+    color: blanchedalmond;
+    padding: 0px 23px;
+    font-size: 23px;
+}
+.cooLink::after{
+    display: block;
+    content: "";
+    width: 0px;
+    height: 2px;
+    transition: width 0.3s;
+    background-color: honeydew;
+
+}
+.cooLink:hover::after{
+    width: 100%;
+    
+}

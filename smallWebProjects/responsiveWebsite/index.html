@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website | RWeb.com</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" media="screen and (max-width:900px)" href="./css/phone.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="./images/icon1.jpg" alt="RWeb.com">
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services-container">Services</a></li>
+            <li><a href="#client-section">Clients</a></li>
+            <li><a href="#contact">Contact US</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="p-heading center">
+            Welcome To Responsive Website
+        </h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis dicta adipisci voluptatem!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <button class="btn center">HIT IT</button>
+    </section>
+
+    <section id="services-container">
+        <h1 class="p-heading center">
+            Our Services
+        </h1>
+        <div id="services">
+            <div class="box">
+                <img src="./icon/Facebook.png" alt="">
+                <div class="s-heading center">An Apple</div>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime esse molestias mollitia odit, provident neque! Veritatis soluta qui ea minima!</p>
+            </div>
+            <div class="box">
+                <img src="./icon/Facebook.png" alt="">
+                <div class="s-heading center">A Window</div>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime esse molestias mollitia odit, provident neque! Veritatis soluta qui ea minima!</p>
+            </div>
+            <div class="box">
+                <img src="./icon/Facebook.png" alt="">
+                <div class="s-heading center">A Chair</div>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime esse molestias mollitia odit, provident neque! Veritatis soluta qui ea minima!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="client-section">
+        <h1 class="p-heading center">Our Clients</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="./icon/Apple.png" alt="">
+            </div>
+            <div class="client-item">
+                <img src="./icon/Google.png" alt="">
+            </div>
+            <div class="client-item">
+                <img src="./icon/Windows.png" alt="">
+            </div>
+            <div class="client-item">
+                <img src="./icon/Facebook.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1 class="p-heading center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <input type="text" name="name" id="name" placeholder="enter self name" required>
+                </div>
+                <div class="form-group">
+                    
+                    <input type="email" name="email" id="email" placeholder="enter mail" required>
+                </div>
+                <div class="form-group">
+                   <input type="phone" name="number" id="number" placeholder="0000-0000-00" maxlength="10" required>
+                </div>
+                <div class="form-group"> 
+                   
+                    <textarea name="message" id="message" cols="3" rows="4" placeholder="your message here"></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; 2020 www.RWeb.com
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenImages</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* css reset */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-image: url('https://source.unsplash.com/1600x900/?tech,nature');
+            background-size: cover;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="images/logo.jpg" alt="LogoImage">
+            <div>Open Images</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Join Now</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call Now</button>
+            <button class="btn">Email Now</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join Our Newsletter</h1>
+        <form action="back.php">
+            <div class="form-group">
+                <input type="text" name="name" id="name" placeholder="Enter Name">
+            </div>
+            <div class="form-group">
+                <input type="tel" name="pnum" id="pnum" placeholder="Enter Phone Num">
+            </div>
+            <div class="form-group">
+                <input type="number" name="age" id="age" placeholder="Age">
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" id="email" placeholder="email">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+
+    </div>
+</body>
+
+</html>

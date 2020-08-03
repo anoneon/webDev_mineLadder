@@ -1,0 +1,23 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /* background-color: black; */
+}
+
+.loader{
+    margin: 30vh auto;
+    width: 200px;
+    height: 200px;
+    border: 16px solid black;
+    border-radius: 50%;
+    border-top: 16px solid chartreuse;
+    animation: spin 2s linear infinite;
+}
+@keyframes spin{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

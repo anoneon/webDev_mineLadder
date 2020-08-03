@@ -1,0 +1,248 @@
+/* css reset */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* css variable */
+:root{
+    --navbar-height:59px;
+}
+
+::placeholder{
+    color: green;
+}
+/* navbar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top:0px;
+}
+
+/* nav bg */
+#navbar::before{
+    content: "";
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    top:0px;
+    left: 0px;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.43;
+}
+
+/* navbar:logo */
+#logo{
+    margin: 4px 18px;
+}
+
+/* navbar:logoImage */
+#logo img{
+    height: 39px;
+    margin: 4px 6px;
+    border-radius: 50%;
+}
+
+/* navbar:list */
+#navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* navbar:list style */
+#navbar ul li{
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+/* navbar:list anchor */
+#navbar ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 3px 13px;
+    border-radius: 4px;
+    color: white;
+}
+
+/* on hover */
+#navbar ul li a:hover{
+    background-color: white;
+    opacity: 0.7;
+    color: black;
+    transition: 1s;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+    align-items: center;
+    padding: 3px 100px;
+}
+
+#home::before{
+    content: "";
+    background: url('../images/bg1.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 72%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.85;
+    top:0px;
+    left: 0px;   
+}
+
+/* p-heading */
+#home h1{
+    color: white;
+}
+
+#home p{
+    color: white;
+    font-size: 1.2rem;
+}
+/* Services Section */
+
+#services{
+    display: flex;
+}
+#services .box{
+    border: 1px solid red;
+    padding: 4px 6px;
+    margin: 25px 40px;
+    border-radius: 15px;
+    background-color: #dec1bd;
+}
+#services .box img{
+    height: 100px;
+    display: block;
+    margin: auto;
+    filter: drop-shadow(2px 4px 6px black);
+    border-radius: 10px;
+    margin-top: 10px;
+}
+#services .box p{
+    font-size: 0.8rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Client Section */
+
+#client-section{
+    position: relative;
+}
+#client-section::before{
+    content: "";
+    background: url('../images/bg2.jpg') center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    top: 0px;
+    left: 0px;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.client-item{
+    padding: 20px 50px;
+}
+
+.client-item img{
+    height: 70px;   
+    border-radius: 10px;
+}
+
+/* Contact */
+
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    background: url('../images/bg3.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    padding-bottom: 20px;
+    
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box input, textarea {
+    width: 100%;
+    padding: 10px 30px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    margin: 10px;
+    font-size: 16px;
+}
+
+/* footer */
+
+footer{
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    padding: 6px;
+    font-size: 1.2rem;
+}
+/* Utility Classes */
+.p-heading{
+    font-size: 2.5rem;
+    padding: 12px;
+}
+
+.s-heading{
+    font-size: 2.1rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 6px 19px;
+    margin-top: 100px;
+    border: 1px solid white;
+    background-color: yellowgreen;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    cursor: pointer;
+    outline: none;
+    font-weight: bold;
+}
+
+/* center */
+.center{
+    text-align: center;
+}
+

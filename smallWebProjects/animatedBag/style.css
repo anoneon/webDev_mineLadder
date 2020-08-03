@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: white;
+    animation: anim 8s infinite;
+}
+@keyframes anim{
+    0%{
+       background-color: aqua; 
+    }
+    20%{
+        background-color: red; 
+        
+    }
+    40%{
+        background-color: pink; 
+        
+    }
+    80%{
+        background-color: black; 
+        color: wheat;
+        
+    }
+    100%{
+        background-color: greenyellow; 
+
+    }
+
+}
+.animeBG{
+    
+    width: 40%;
+    margin: 150px auto;
+    text-align: justify;
+    font-size: 25px;
+}

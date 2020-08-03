@@ -1,0 +1,78 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: url("./BG1.jpg") 50% 50% no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+
+}
+.signin{
+    padding: 2em;
+    border: 1px solid rgba(255,255,255,0.3);
+    background-color: rgba;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    
+}
+h1{
+    font-weight: lighter;
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    padding-top: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+input{
+    display: block;
+    border: 1px solid rgba(0,0,0,0.5);
+    outline: none;
+    padding-left: 10px;
+    height: 30px;
+    width: 250px;
+    border-radius: 5px;
+    font-size: 16px;
+    background: rgba(0,0,0,0.2);
+    color: white;
+    font-weight: lighter;
+    margin: 25px auto;
+}
+.btn{
+    width: 200px;
+    background: #000;
+    font-weight: lighter;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 250px;
+    height: 30px;
+    margin: 0px 25px;   
+}
+ @media only screen and (max-width:500px){
+    .signin{
+        width:200px;
+        height: 200px;
+    }
+    h1{
+        font-size: 30px;
+        
+    }
+    input{
+        height: 20px;
+        width: 150px;
+        font-size: 12px;
+    }
+    .btn{
+        font-size: 12px;
+        width: 150px;
+        height: 20px;
+
+    }
+}
