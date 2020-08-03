@@ -1,0 +1,51 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: blueviolet;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px solid red;
+}
+.circle{
+    width: 20px;
+    /* border: 1px solid red; */
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    animation: anim 3s linear infinite;
+    box-shadow: 3px 2px 5px rgb(240, 126, 92);
+}
+.circle:nth-child(2){
+    animation-delay: .2s;
+    background-color: yellow;
+    box-shadow: 3px 2px 5px rgb(253, 241, 134);
+}
+
+.circle:nth-child(3){
+    box-shadow: 3px 2px 5px rgb(117, 190, 8);
+    background-color: green;
+    animation-delay: .4s;
+}
+@keyframes anim{
+    0%{
+        transform-origin: 400% 50%;
+        transform: rotate(0deg);    
+    }
+    50%{
+        transform-origin: 400% 50%;
+        transform: rotate(360deg);
+    }
+    50.1%{
+        transform-origin: -300% 50%;
+        
+        transform: rotate(360deg);
+    }
+    100%{
+        transform-origin: -300% 50%;
+        transform: rotate(0deg);
+    }
+}
