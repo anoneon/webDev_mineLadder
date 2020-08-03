@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    <script>
+        let names=new Array("suraj","abhishek","anmol","ajay","bijay","dhan bahadur");
+
+        for (let index = 0; index < names.length; index++) {
+            console.log(names[index] + " in for loop");
+        }
+        
+        names.forEach(function fn(item) {
+            
+            console.log(item + " in forEach loop");
+        });
+        
+        for (const item of names) {
+            console.log(item + " in forof loop");
+            
+        }
+
+        let obj={
+            name:"suraj",
+            age:23
+        }
+
+        for(key in obj){
+            console.log(`the persons ${key} is ${obj[key]}`);
+        }
+
+        var ind=0;
+        while(ind<names.length)
+        {
+            console.log(names[ind] + "in while loop");
+            ind++;
+        }
+
+        ind=0;
+        do{
+            console.log(names[ind] + "in do-while loop");
+            ind++;
+        }while(ind<names.length)
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js string function</title>
+    
+</head>
+<body>
+    <h1>Hello</h1>
+    <script>
+        var str=" This is a string ";
+        console.log(str);
+        var isPosition=str.indexOf("is");
+        console.log("is position from forward " + isPosition);
+        var isLastPosition=str.lastIndexOf("is");
+        console.log("is position from last " +isLastPosition);
+        
+        var substr=str.slice(0,6);
+        console.log("sub string using slice(0,6) - " + substr);
+        console.log("sub string using substring(0,6) - " + str.substring(0,6));
+        console.log("sub string using substr(0,6) - " + str.substr(0,6))
+
+        console.log("replacing - " + str.replace("string","replaced string"));
+
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+
+        console.log(str.concat(" this is concated"));
+        console.log(str.trim());
+        console.log(str.charAt(1));
+        console.log(str.charCodeAt(1));
+    </script>
+</body>
+</html>

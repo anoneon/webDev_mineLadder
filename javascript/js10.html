@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js timout & interval & use of date obj</title>
+</head>
+<body>
+    <div class="container">
+        <span id="time"></span>
+    </div>
+    <script>
+        function fn(name){
+            console.log("hello there "+ name);
+        }
+        let sto = setTimeout(fn,3000,"suraj mukhia");
+
+        clearTimeout(sto);
+
+        let time = document.getElementById('time');
+
+        
+
+        function showTime(){
+            time.innerHTML=new Date();
+        }
+        setInterval(showTime, 1000);
+    </script>
+</body>
+</html>
