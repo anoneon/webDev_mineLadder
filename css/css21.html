@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media with grid</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:'nav nav nav nav''section section section aside''footer footer footer footer';
+        }
+
+        .brd {
+            border: 2px solid black;
+            background-color: white;
+            padding: 10px 23px;
+        }
+
+        nav {
+            grid-area: nav;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area:footer;
+        }
+
+        .item{
+            text-align: center;
+        }
+        @media only screen and (max-width: 521px){
+            body{
+                background-color: yellow;
+                
+            }
+            .container {
+            grid-template-areas:'nav nav nav nav'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer';
+        }
+
+        }
+        @media only screen and (min-width:522px) and (max-width:1024px){
+            body{
+                background-color:blue;
+                
+            }
+            .container {
+            grid-template-areas:'nav nav nav nav'
+            'section section aside aside'
+            'footer footer footer footer';
+        }
+        }
+        @media only screen and (min-width:1025px) and (max-width:1280px){
+            body{
+                background-color:rgb(33, 197, 175);
+                
+            }
+            .item{
+                display: inline-block;
+                
+            }
+        }
+        @media only screen and (min-width:1281px){
+            body{
+                background-color:rgb(33, 197, 74);
+               
+            }
+            .item{
+                display: inline-block;
+                
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="brd">
+            <div class="item">Home</div>
+            <div class="item">About</div>
+            <div class="item">Contact</div>
+            <div class="item">Services</div>
+        </nav>
+        <section class="brd">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur est vitae accusamus
+            et. Tenetur suscipit sequi reprehenderit quidem ex, dolorem nihil, harum laboriosam totam exercitationem quo
+            magni ipsa voluptates hic consectetur autem temporibus cumque quis esse optio rerum. Consectetur in beatae,
+            debitis tenetur laudantium dolor, officia enim sed odit blanditiis at repellendus earum. Mollitia doloremque
+            autem obcaecati saepe? Facere at, quae laudantium aspernatur dolorem in doloribus rem nemo sed totam iste
+            quas repellendus et aliquid. Saepe alias doloremque eligendi esse commodi nihil rem animi voluptas, cum
+            dolorum, cumque maxime deserunt modi unde suscipit et. Repellendus ipsum odit consequatur commodi similique
+            illo, odio officiis eveniet tenetur, aliquam saepe laudantium cumque a vero vitae voluptatum quod natus
+            perferendis non porro alias voluptate possimus qui.</section>
+        <aside class="brd">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora dignissimos vitae accusamus
+            possimus provident magni reprehenderit placeat fugiat, inventore harum recusandae eius ratione voluptate
+            labore totam sequi temporibus dolores officiis quasi aperiam rem aliquid distinctio? Aliquid numquam tempora
+            asperiores magnam.</aside>
+
+        <footer class="brd">copyright yoyo &copy;</footer>
+    </div>
+</body>
+
+</html>

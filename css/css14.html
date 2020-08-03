@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyframes & animation</title>
+    <style>
+        .container{
+            background-color: chartreuse;
+            height: 500px;
+        }
+        .box{
+            position: relative;
+            background-color: crimson;
+            width: 250px;
+            height: 250px;
+            text-align: center;
+            animation: boxani 3s ease 3 forwards;
+            border: 2px solid black;
+        }
+        @keyframes boxani {
+            0%{
+                top:0px;
+                left: 0px;
+            }
+            25%{
+                top: 250px;
+                left: 0px;
+            }
+            50%{
+                top: 250px;
+                left: 250px;
+            }
+            75%{
+                top: 0px;
+                left: 250px;
+            }
+            100%{
+                top: 0px;
+                left: 0px;
+            }
+        }
+        h1{
+            padding-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>HEre the bOX</h1>
+        </div>
+    </div>
+</body>
+</html>
