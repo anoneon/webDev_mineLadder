@@ -1,4 +1,2 @@
-# webDev_mineLadder
-mine learning path/files
-
+# webMiniPJ
 web development basics
